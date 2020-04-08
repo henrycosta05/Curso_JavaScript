@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <section class="container">
+        <h1>TABELA IMC</h1>
+
+        <!-- <p>
+            Este representa o paragrafo da página.
+            Para colocar algum texto aqui dentro vou fazer um breve relato do curso até este momento.
+            bom, para isso preciso dizer que eu já trabalhava com chatbot que permite desenvolvimento em javascript.
+            então até este momento não encontrei nenhuma dificuldade e aprendi algumas coisas na teoria, coisas que eu só conhecia na prática.
+            Em linhas gerais estou gostando do curso, acredito que daqui pra frente vou conseguir aprender mais coisas.
+        </p> -->
+
+        <div id="wrap">
+            <div id="left_col">
+                <strong>IMC</strong>
+                <p>Menos do que 18,5</p>
+                <p>Entre 18,5 e 24,9</p>
+                <p>Entre 25 e 29,9</p>
+                <p>Entre 30 e 34,9</p>
+                <p>Entre 35 e 39,9</p>
+                <p>Mais do que 40</p>
+            </div>
+            <div id="right_col">
+                <strong>RESULTADO</strong>
+                <p>Abaixo do peso</p>
+                <p>peso normal</p>
+                <p>Sobrepeso</p>
+                <p>Obesidade grau 1</p>
+                <p>Obesidade grau 2</p>
+                <p>Obesidade grau 3</p>
+            </div>
+        </div>
+
+        <form class="imcForm" action="" method="POST">
+            <label for="peso">Digite seu peso em kilogramas</label>
+            <input type="text" id="peso">
+
+            <label for="altura">Digite sua altura em metros</label>
+            <input type="text" id="altura">
+
+            <button id="submitData">Enviar</button>
+        </form>
+
+        <div class="exibeResultadoImc"></div>
+    </section>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
