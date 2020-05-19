@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 
-mongoose.connect( process.env.CONNECTIONSTRING ,{ useNewUrlParser: true, useUnifiedTopology: true } )
+mongoose.connect( process.env.CONNECTIONSTRING ,{ useNewUrlParser: true, useUnifiedTopology: true,  "auth": { "authSource": "admin" } } )
     .then( () => {
         console.log('data base connected');
         app.emit( 'Done' );
