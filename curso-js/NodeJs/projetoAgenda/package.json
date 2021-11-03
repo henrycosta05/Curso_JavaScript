@@ -35,6 +35,6 @@
     "mongoose": "^5.9.14",
     "regenerator-runtime": "^0.13.3",
     "style-loader": "^1.0.0",
-    "validator": "^13.0.0"
+    "validator": "^13.7.0"
   }
 }
